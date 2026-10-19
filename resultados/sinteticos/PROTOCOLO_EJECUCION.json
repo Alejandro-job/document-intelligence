@@ -1,0 +1,12 @@
+{
+  "version": "citi_contexto_y_evaluacion_v1",
+  "python": "3.12.14",
+  "extractor_ejecutado": "reglas_y_etiquetas_explicitas",
+  "qwen_ejecutado_en_lote": false,
+  "qwen_entrenado": false,
+  "localizador_entrenado": false,
+  "particion": "desarrollo_sintetico",
+  "pruebas_regresion": 13,
+  "citas_verificadas_TIDA": 480,
+  "tesseract": "tesseract 5.3.4"
+}

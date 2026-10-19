@@ -1,0 +1,24 @@
+{
+  "razon_social": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+  "fecha_constitucion": "2022-03-14",
+  "numero_escritura": "3108",
+  "notario": {
+    "nombre": null,
+    "numero": 18
+  },
+  "socios": [
+    "ANA TORRES DEMO",
+    "LUIS RAMIREZ PRUEBA"
+  ],
+  "representantes_legales": [
+    "MARIANA ORTEGA EJEMPLO"
+  ],
+  "poderes": [
+    "pleitos_y_cobranzas",
+    "administracion"
+  ],
+  "capital_social_actual": {
+    "valor": "500000.00",
+    "moneda": "MXN"
+  }
+}

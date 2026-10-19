@@ -1,0 +1,235 @@
+{
+  "version": "contexto_encabezados_y_roles_v1",
+  "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+  "paginas": [
+    {
+      "pagina": 1,
+      "tipos_propuestos": [
+        "texto_documental_sin_clasificar"
+      ],
+      "detonadores": {
+        "razon_social": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              233,
+              245
+            ],
+            "texto": "RAZÓN SOCIAL",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "fecha_constitucion": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              140,
+              152
+            ],
+            "texto": "constitución",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              301,
+              313
+            ],
+            "texto": "CONSTITUCIÓN",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "numero_escritura": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              37,
+              48
+            ],
+            "texto": "Escritura 2",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              175,
+              191
+            ],
+            "texto": "ESCRITURA NÚMERO",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "notario": [],
+        "socios": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              327,
+              333
+            ],
+            "texto": "SOCIOS",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "representantes_legales": [],
+        "poderes": [],
+        "capital_social_actual": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+            "rango_caracteres": [
+              379,
+              393
+            ],
+            "texto": "CAPITAL SOCIAL",
+            "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ]
+      },
+      "metadatos_contextuales": {
+        "rfc": [],
+        "fecha_inscripcion": [],
+        "inicio_operaciones": [],
+        "folio_mercantil": [],
+        "prelacion_registral": [],
+        "registro": []
+      },
+      "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+      "texto_completo": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+      "advertencia": "La clasificación describe el contenido de esta página; no sustituye el rol del instrumento completo."
+    }
+  ],
+  "personas_en_tablas": [],
+  "remisiones": [],
+  "recuperacion_por_campo": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          635
+        ],
+        "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "razon_social",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          635
+        ],
+        "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "fecha_constitucion",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "numero_escritura": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          635
+        ],
+        "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "numero_escritura",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "notario": [],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          635
+        ],
+        "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "socios",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "representantes_legales": [],
+    "poderes": [],
+    "capital_social_actual": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          635
+        ],
+        "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "capital_social_actual",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ]
+  },
+  "alertas_calidad": [],
+  "entrenamiento": false,
+  "inferencia_nueva": false,
+  "ocr_nuevo": false,
+  "evaluacion": "diagnostico de desarrollo; no precision ni recall de extraccion",
+  "aprobado": false
+}

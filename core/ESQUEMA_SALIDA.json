@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:document-intelligence:extraction:fields:v1",
+  "type": "object",
+  "properties": {
+    "razon_social": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fecha_constitucion": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "numero_escritura": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notario": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "numero": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            }
+          },
+          "required": [
+            "nombre",
+            "numero"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "socios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "representantes_legales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "poderes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capital_social_actual": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "valor": {
+              "type": "string",
+              "pattern": "^\\d+(?:\\.\\d+)?$"
+            },
+            "moneda": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "valor",
+            "moneda"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "razon_social",
+    "fecha_constitucion",
+    "numero_escritura",
+    "notario",
+    "socios",
+    "representantes_legales",
+    "poderes",
+    "capital_social_actual"
+  ],
+  "additionalProperties": false
+}

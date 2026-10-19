@@ -1,0 +1,20 @@
+{
+  "archivo": "02_acta_escaneada_B.pdf",
+  "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+  "estado": "inspeccionado",
+  "clasificacion": "escaneado_o_texto_no_utilizable",
+  "paginas_totales": 1,
+  "paginas_con_ocr_necesario": 1,
+  "pdf_reparado_por_pymupdf": false,
+  "paginas": [
+    {
+      "pagina": 1,
+      "metodo": "tesseract_spa",
+      "requiere_ocr": true,
+      "caracteres_texto_pdf": 0,
+      "caracteres_alfanumericos": 0,
+      "imagen_grande": true,
+      "criterio": "heuristica_de_texto_utilizable; no mide exactitud ni completitud"
+    }
+  ]
+}

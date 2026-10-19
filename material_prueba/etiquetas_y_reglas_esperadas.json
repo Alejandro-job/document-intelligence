@@ -1,0 +1,237 @@
+{
+  "dataset": "CITI_AI_FACTORY_sintetico_v1",
+  "advertencia": "DATOS FICTICIOS SIN VALIDEZ LEGAL",
+  "documentos": [
+    {
+      "archivo": "01_acta_constitucion_A.pdf",
+      "escenario": "Constitución de sociedad; capital y representante originales",
+      "tipo_pdf": "texto_nativo",
+      "empresa": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "fecha_constitucion": "2022-03-14",
+        "numero_escritura": "1201",
+        "notario": "NOTARIO FICTICIO 18, CIUDAD EJEMPLO",
+        "socios": [
+          "ANA TORRES DEMO",
+          "LUIS RAMIREZ PRUEBA"
+        ],
+        "representantes_legales": [
+          "ANA TORRES DEMO"
+        ],
+        "poderes": [
+          "PLEITOS Y COBRANZAS",
+          "ACTOS DE ADMINISTRACION"
+        ],
+        "capital_social_actual": {
+          "valor": 100000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": false,
+        "evento": "constitucion",
+        "capital_documentado": 100000
+      },
+      "requiere_revision_humana": false,
+      "sha256": "fad6a416ea5b8e90be16fd60c5d867f0309a614dd26a6df45edf509474e16e94"
+    },
+    {
+      "archivo": "02_acta_escaneada_B.pdf",
+      "escenario": "Constitución escaneada sin poderes expresos",
+      "tipo_pdf": "escaneado",
+      "empresa": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.V.",
+        "fecha_constitucion": "2021-09-06",
+        "numero_escritura": "2205",
+        "notario": "NOTARÍA SIMULADA 7, CIUDAD EJEMPLO",
+        "socios": [
+          "CARLOS MEDINA FICTICIO",
+          "SOFIA LUNA ENSAYO"
+        ],
+        "representantes_legales": [
+          "CARLOS MEDINA FICTICIO"
+        ],
+        "poderes": null,
+        "capital_social_actual": {
+          "valor": 200000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "falta": "poderes",
+        "nota": "No inferir poderes ausentes"
+      },
+      "requiere_revision_humana": true,
+      "sha256": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc"
+    },
+    {
+      "archivo": "03_acta_modificacion_C.pdf",
+      "escenario": "Aumento de capital y cambio de representante con antecedentes",
+      "tipo_pdf": "texto_nativo",
+      "empresa": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "fecha_constitucion": "2022-03-14",
+        "numero_escritura": "3108",
+        "notario": "NOTARIO FICTICIO 18, CIUDAD EJEMPLO",
+        "socios": [
+          "ANA TORRES DEMO",
+          "LUIS RAMIREZ PRUEBA"
+        ],
+        "representantes_legales": [
+          "MARIANA ORTEGA EJEMPLO"
+        ],
+        "poderes": [
+          "PLEITOS Y COBRANZAS",
+          "ACTOS DE ADMINISTRACION"
+        ],
+        "capital_social_actual": {
+          "valor": 500000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "eventos": [
+          "aumento_capital",
+          "cambio_representante",
+          "revocacion_poderes"
+        ],
+        "capital_anterior": 100000,
+        "capital_nuevo": 500000,
+        "representante_anterior": "ANA TORRES DEMO",
+        "representante_nuevo": "MARIANA ORTEGA EJEMPLO"
+      },
+      "requiere_revision_humana": true,
+      "sha256": "1ddceee69946a4a3c77ea2d5d5c4ed30824b4de14ea9a7737f33313391d38eb3"
+    },
+    {
+      "archivo": "04_acta_sin_poderes_D.pdf",
+      "escenario": "Documento válido de extracción pero sin cláusula de poderes",
+      "tipo_pdf": "texto_nativo",
+      "empresa": "LOGISTICA DEL PACIFICO DEMO, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "LOGISTICA DEL PACIFICO DEMO, S.A. DE C.V.",
+        "fecha_constitucion": "2023-11-20",
+        "numero_escritura": "4100",
+        "notario": "NOTARÍA FICTICIA 23",
+        "socios": [
+          "ELENA SOTO EJEMPLO",
+          "JORGE PEREZ DEMO"
+        ],
+        "representantes_legales": [
+          "ELENA SOTO EJEMPLO"
+        ],
+        "poderes": null,
+        "capital_social_actual": {
+          "valor": 150000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "falta": "poderes",
+        "nota": "No inventar datos ausentes"
+      },
+      "requiere_revision_humana": true,
+      "sha256": "722ff2bc5c554a79723d038c6f82768c8fc35bf4f821e394d6ac0bf05d84ff37"
+    },
+    {
+      "archivo": "05_acta_capital_ambiguo_E.pdf",
+      "escenario": "Importes de capital contradictorios o con diferente naturaleza",
+      "tipo_pdf": "texto_nativo",
+      "empresa": "TECNOLOGIA ORIENTE SIMULADA, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "TECNOLOGIA ORIENTE SIMULADA, S.A. DE C.V.",
+        "fecha_constitucion": "2024-01-16",
+        "numero_escritura": "5077",
+        "notario": "NOTARÍA DE PRUEBA 12",
+        "socios": [
+          "DANIEL ROJAS PRUEBA",
+          "INES VEGA FICTICIA"
+        ],
+        "representantes_legales": [
+          "INES VEGA FICTICIA"
+        ],
+        "poderes": [
+          "ACTOS DE ADMINISTRACION"
+        ],
+        "capital_social_actual": null
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "motivo": "Dos cifras contradictorias; no elegir un capital sin revisión",
+        "importes_en_conflicto": [
+          350000,
+          530000
+        ]
+      },
+      "requiere_revision_humana": true,
+      "sha256": "cf82d0b02af373ee1de804b199d13d9899f76981becbca382157ad08b08d4a08"
+    },
+    {
+      "archivo": "06_acta_escaneo_dificil_F.pdf",
+      "escenario": "Escaneo degradado para probar OCR y revisión",
+      "tipo_pdf": "escaneado",
+      "empresa": "MANUFACTURA EXPERIMENTAL DEL BAJIO, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "MANUFACTURA EXPERIMENTAL DEL BAJIO, S.A. DE C.V.",
+        "fecha_constitucion": "2020-05-12",
+        "numero_escritura": "6280",
+        "notario": "NOTARIO FICTICIO 45",
+        "socios": [
+          "RAUL BARRERA PRUEBA",
+          "PAULA IBARRA FICTICIA"
+        ],
+        "representantes_legales": [
+          "PAULA IBARRA FICTICIA"
+        ],
+        "poderes": [
+          "PLEITOS Y COBRANZAS"
+        ],
+        "capital_social_actual": {
+          "valor": 75000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "motivo": "Confirmar que OCR mantiene los importes y personas pese a degradación"
+      },
+      "requiere_revision_humana": true,
+      "sha256": "c2be348d695cb1e8fb322def8aaa67c634ca8e9f9caaa4524e9d9190c3f2e2a2"
+    },
+    {
+      "archivo": "07_revocacion_sin_sucesor_G.pdf",
+      "escenario": "Representante revocado sin sustituto documentado",
+      "tipo_pdf": "texto_nativo",
+      "empresa": "SERVICIOS DEL NORTE EJEMPLO, S.A. DE C.V.",
+      "campos_esperados": {
+        "razon_social": "SERVICIOS DEL NORTE EJEMPLO, S.A. DE C.V.",
+        "fecha_constitucion": "2019-02-13",
+        "numero_escritura": "7010",
+        "notario": "NOTARÍA SIMULADA 36",
+        "socios": [
+          "MARIO CRUZ EJEMPLO",
+          "LAURA SOLIS DEMO"
+        ],
+        "representantes_legales": null,
+        "poderes": null,
+        "capital_social_actual": {
+          "valor": 120000,
+          "moneda": "MXN"
+        }
+      },
+      "reglas_de_negocio_a_probar": {
+        "revisar_humano": true,
+        "evento": "revocacion_representante",
+        "nota": "No asumir nuevo representante, requerir acta posterior"
+      },
+      "requiere_revision_humana": true,
+      "sha256": "d547dd8984f40095ddcf4018ec0f3b70e9e3e6bae6caec0f3b222c15ea7c68ec"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "documental_verificacion_entrega_v1",
+  "entorno": {
+    "python": "3.12.14",
+    "pymupdf": "1.26.6",
+    "pillow": "12.3.0"
+  },
+  "pruebas": {
+    "api_y_launcher_python": {
+      "total": 16,
+      "aprobadas": 16
+    },
+    "frontend_portatil": {
+      "total": 4,
+      "aprobadas": 4
+    },
+    "frontend_privado_datos_reales": {
+      "total": 29,
+      "aprobadas": 29
+    },
+    "contrato_adaptador_qwen_generador_simulado": {
+      "total": 2,
+      "aprobadas": 2,
+      "inferencia_real": false
+    },
+    "fichas_manuales_procedencia": {
+      "total": 7,
+      "aprobadas": 7
+    },
+    "frontend_privado_datos_reales_y_fichas": {
+      "total": 36,
+      "aprobadas": 36
+    }
+  },
+  "alcance": {
+    "recorrido_real_api": "A y C por reglas; protegidos/corruptos y ausencia de español probados",
+    "OCR_B": "lectura y evaluación archivadas; el OCR español no está instalado en el entorno nuevo de esta verificación",
+    "qwen": "la nueva integración de ocho campos no se ejecutó aquí con GPU; el piloto guardado de representantes se conserva como caso de desarrollo",
+    "navegador": "no verificado; control-browser no disponible",
+    "colab": "iniciador preparado; falta ejecución en el Colab del usuario",
+    "docker": "preparado; no construido ni ejecutado aquí",
+    "ine_y_comprobante": "captura manual con archivos, hash, página y regiones de imágenes; extracción automática pendiente"
+  },
+  "precision_productiva": null,
+  "produccion_validada": false,
+  "generado_utc": "2026-10-18T23:08:40.036044+00:00",
+  "reestilo": {
+    "interfaz_sin_logotipo": true,
+    "cuatro_tipos_documentales": true,
+    "pruebas_python": 18,
+    "pruebas_frontend_portatil": 11,
+    "pruebas_frontend_privado": 36,
+    "qa_visual_navegador": false
+  },
+  "edicion_repositorio": {
+    "nombre": "document-intelligence",
+    "fecha_utc": "2026-10-19T04:58:22.718175+00:00",
+    "modulos_renombrados_sin_marca_institucional": true,
+    "python_tests": {
+      "total": 18,
+      "aprobadas": 18
+    },
+    "node_tests": {
+      "total": 11,
+      "aprobadas": 11
+    },
+    "contenido_distribuido": "3 PDFs sintéticos A/B/C y sus resultados archivados; referencia original de 7 escenarios conservada",
+    "github_actions": "workflow YAML preparado y validado; no ejecutado remotamente",
+    "github_publicacion": "pendiente; no se creó repositorio remoto",
+    "huggingface_publicacion": "no realizada desde este trabajo",
+    "entrenamiento_nuevo": false,
+    "inferencia_neural_nueva": false,
+    "qa_visual_navegador": false
+  }
+}

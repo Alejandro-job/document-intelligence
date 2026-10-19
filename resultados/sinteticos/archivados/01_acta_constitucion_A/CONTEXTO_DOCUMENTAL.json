@@ -1,0 +1,267 @@
+{
+  "version": "contexto_encabezados_y_roles_v1",
+  "sha256_pdf": "fad6a416ea5b8e90be16fd60c5d867f0309a614dd26a6df45edf509474e16e94",
+  "paginas": [
+    {
+      "pagina": 1,
+      "tipos_propuestos": [
+        "texto_documental_sin_clasificar"
+      ],
+      "detonadores": {
+        "razon_social": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              304,
+              316
+            ],
+            "texto": "RAZÓN SOCIAL",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "fecha_constitucion": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              196,
+              208
+            ],
+            "texto": "constitución",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              374,
+              386
+            ],
+            "texto": "CONSTITUCIÓN",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "numero_escritura": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              76,
+              87
+            ],
+            "texto": "Escritura 1",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              245,
+              261
+            ],
+            "texto": "ESCRITURA NÚMERO",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "notario": [],
+        "socios": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              409,
+              415
+            ],
+            "texto": "SOCIOS",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "representantes_legales": [],
+        "poderes": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              567,
+              586
+            ],
+            "texto": "PLEITOS Y COBRANZAS",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "capital_social_actual": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+            "rango_caracteres": [
+              467,
+              481
+            ],
+            "texto": "CAPITAL SOCIAL",
+            "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ]
+      },
+      "metadatos_contextuales": {
+        "rfc": [],
+        "fecha_inscripcion": [],
+        "inicio_operaciones": [],
+        "folio_mercantil": [],
+        "prelacion_registral": [],
+        "registro": []
+      },
+      "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+      "texto_completo": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+      "advertencia": "La clasificación describe el contenido de esta página; no sustituye el rol del instrumento completo."
+    }
+  ],
+  "personas_en_tablas": [],
+  "remisiones": [],
+  "recuperacion_por_campo": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "razon_social",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "fecha_constitucion",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "numero_escritura": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "numero_escritura",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "notario": [],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "socios",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "representantes_legales": [],
+    "poderes": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "poderes",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          781
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la constitución de una sociedad\nmercantil, según la ESCRITURA NÚMERO 1201, ante el NOTARIO FICTICIO NÚMERO 18.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nFECHA DE CONSTITUCIÓN: 14 DE MARZO DE 2022.\nSOCIOS FUNDADORES: ANA TORRES DEMO y LUIS RAMIREZ PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.\nREPRESENTANTE LEGAL: ANA TORRES DEMO.\nPODERES CONFERIDOS: PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN.\nLas partes expresan que esta acta constituye exclusivamente un material ficticio de evaluación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "capital_social_actual",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ]
+  },
+  "alertas_calidad": [],
+  "entrenamiento": false,
+  "inferencia_nueva": false,
+  "ocr_nuevo": false,
+  "evaluacion": "diagnostico de desarrollo; no precision ni recall de extraccion",
+  "aprobado": false
+}

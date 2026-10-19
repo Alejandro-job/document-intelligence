@@ -1,0 +1,20 @@
+{
+  "archivo": "01_acta_constitucion_A.pdf",
+  "sha256_pdf": "fad6a416ea5b8e90be16fd60c5d867f0309a614dd26a6df45edf509474e16e94",
+  "estado": "inspeccionado",
+  "clasificacion": "texto_pdf_o_paginas_vacias",
+  "paginas_totales": 1,
+  "paginas_con_ocr_necesario": 0,
+  "pdf_reparado_por_pymupdf": false,
+  "paginas": [
+    {
+      "pagina": 1,
+      "metodo": "texto_pdf",
+      "requiere_ocr": false,
+      "caracteres_texto_pdf": 781,
+      "caracteres_alfanumericos": 630,
+      "imagen_grande": false,
+      "criterio": "heuristica_de_texto_utilizable; no mide exactitud ni completitud"
+    }
+  ]
+}

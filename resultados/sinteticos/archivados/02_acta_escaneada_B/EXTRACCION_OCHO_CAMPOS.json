@@ -1,0 +1,21 @@
+{
+  "razon_social": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+  "fecha_constitucion": "2021-09-06",
+  "numero_escritura": "2205",
+  "notario": {
+    "nombre": null,
+    "numero": 7
+  },
+  "socios": [
+    "CARLOS MEDINA FICTICIO",
+    "SOFIA LUNA ENSAYO"
+  ],
+  "representantes_legales": [
+    "CARLOS MEDINA FICTICIO"
+  ],
+  "poderes": [],
+  "capital_social_actual": {
+    "valor": "200000.00",
+    "moneda": "MXN"
+  }
+}

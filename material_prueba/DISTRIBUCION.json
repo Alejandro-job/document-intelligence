@@ -1,0 +1,30 @@
+{
+  "schema_version": "sinteticos_distribuidos_v1",
+  "referencias_originales": "etiquetas_y_reglas_esperadas.json",
+  "documentos_distribuidos": [
+    {
+      "archivo": "01_acta_constitucion_A.pdf",
+      "sha256": "fad6a416ea5b8e90be16fd60c5d867f0309a614dd26a6df45edf509474e16e94"
+    },
+    {
+      "archivo": "02_acta_escaneada_B.pdf",
+      "sha256": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc"
+    },
+    {
+      "archivo": "03_acta_modificacion_C.pdf",
+      "sha256": "1ddceee69946a4a3c77ea2d5d5c4ed30824b4de14ea9a7737f33313391d38eb3"
+    }
+  ],
+  "escenarios_de_referencia_sin_pdf_en_esta_edicion": [
+    "04_acta_sin_poderes_D.pdf",
+    "05_acta_capital_ambiguo_E.pdf",
+    "06_acta_escaneo_dificil_F.pdf",
+    "07_revocacion_sin_sucesor_G.pdf"
+  ],
+  "evaluacion_archivada_cubre": [
+    "01_acta_constitucion_A.pdf",
+    "02_acta_escaneada_B.pdf",
+    "03_acta_modificacion_C.pdf"
+  ],
+  "nota": "Las siete referencias originales se conservan sin editar. Sólo tres PDFs se distribuyen y se evaluaron en los resultados archivados."
+}

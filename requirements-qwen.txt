@@ -1,0 +1,5 @@
+-r requirements.txt
+torch>=2.4,<3
+transformers>=4.45,<6
+safetensors
+lm-format-enforcer>=0.11,<1

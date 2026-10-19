@@ -1,0 +1,298 @@
+{
+  "estado": "comparacion_ejecutada",
+  "documentos": 3,
+  "particion": "desarrollo_sintetico",
+  "baseline_anterior": false,
+  "por_campo": {
+    "razon_social": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "campos_exactos": 2,
+      "coincidencia_exacta_campo": 0.666667,
+      "cobertura_con_valor": 1.0
+    },
+    "fecha_constitucion": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 1.0
+    },
+    "numero_escritura": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 1.0
+    },
+    "notario": {
+      "numeros_evaluables": 3,
+      "numeros_correctos": 3,
+      "nombres_sin_referencia_personal": 3,
+      "salidas_con_nombre_personal": 0,
+      "coincidencia_numero_notaria": 1.0,
+      "precision_nombre_personal": null
+    },
+    "socios": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "representantes_legales": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "poderes": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 2,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 0.666667,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "capital_social_actual": {
+      "campos_evaluables": 3,
+      "campos_con_valor": 3,
+      "campos_exactos": 3,
+      "coincidencia_exacta_campo": 1.0,
+      "cobertura_con_valor": 1.0
+    }
+  },
+  "detalles": [
+    {
+      "archivo": "01_acta_constitucion_A.pdf",
+      "sha256_pdf": "fad6a416ea5b8e90be16fd60c5d867f0309a614dd26a6df45edf509474e16e94",
+      "campos": {
+        "razon_social": {
+          "esperado": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "obtenido": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "exacto": true
+        },
+        "fecha_constitucion": {
+          "esperado": "2022-03-14",
+          "obtenido": "2022-03-14",
+          "exacto": true
+        },
+        "numero_escritura": {
+          "esperado": "1201",
+          "obtenido": "1201",
+          "exacto": true
+        },
+        "notario": {
+          "numero_esperado": 18,
+          "numero_obtenido": 18,
+          "nombre_personal": "no_evaluable: no figura en la referencia",
+          "completo": false
+        },
+        "socios": {
+          "esperados": [
+            "ana torres demo",
+            "luis ramirez prueba"
+          ],
+          "obtenidos": [
+            "ana torres demo",
+            "luis ramirez prueba"
+          ],
+          "exacto": true
+        },
+        "representantes_legales": {
+          "esperados": [
+            "ana torres demo"
+          ],
+          "obtenidos": [
+            "ana torres demo"
+          ],
+          "exacto": true
+        },
+        "poderes": {
+          "esperados": [
+            "administracion",
+            "pleitos_y_cobranzas"
+          ],
+          "obtenidos": [
+            "administracion",
+            "pleitos_y_cobranzas"
+          ],
+          "exacto": true
+        },
+        "capital_social_actual": {
+          "esperado": {
+            "valor": 100000,
+            "moneda": "MXN"
+          },
+          "obtenido": {
+            "valor": "100000.00",
+            "moneda": "MXN"
+          },
+          "exacto": true
+        }
+      }
+    },
+    {
+      "archivo": "02_acta_escaneada_B.pdf",
+      "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+      "campos": {
+        "razon_social": {
+          "esperado": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.V.",
+          "obtenido": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+          "exacto": false
+        },
+        "fecha_constitucion": {
+          "esperado": "2021-09-06",
+          "obtenido": "2021-09-06",
+          "exacto": true
+        },
+        "numero_escritura": {
+          "esperado": "2205",
+          "obtenido": "2205",
+          "exacto": true
+        },
+        "notario": {
+          "numero_esperado": 7,
+          "numero_obtenido": 7,
+          "nombre_personal": "no_evaluable: no figura en la referencia",
+          "completo": false
+        },
+        "socios": {
+          "esperados": [
+            "carlos medina ficticio",
+            "sofia luna ensayo"
+          ],
+          "obtenidos": [
+            "carlos medina ficticio",
+            "sofia luna ensayo"
+          ],
+          "exacto": true
+        },
+        "representantes_legales": {
+          "esperados": [
+            "carlos medina ficticio"
+          ],
+          "obtenidos": [
+            "carlos medina ficticio"
+          ],
+          "exacto": true
+        },
+        "poderes": {
+          "esperados": [],
+          "obtenidos": [],
+          "exacto": true
+        },
+        "capital_social_actual": {
+          "esperado": {
+            "valor": 200000,
+            "moneda": "MXN"
+          },
+          "obtenido": {
+            "valor": "200000.00",
+            "moneda": "MXN"
+          },
+          "exacto": true
+        }
+      }
+    },
+    {
+      "archivo": "03_acta_modificacion_C.pdf",
+      "sha256_pdf": "1ddceee69946a4a3c77ea2d5d5c4ed30824b4de14ea9a7737f33313391d38eb3",
+      "campos": {
+        "razon_social": {
+          "esperado": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "obtenido": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "exacto": true
+        },
+        "fecha_constitucion": {
+          "esperado": "2022-03-14",
+          "obtenido": "2022-03-14",
+          "exacto": true
+        },
+        "numero_escritura": {
+          "esperado": "3108",
+          "obtenido": "3108",
+          "exacto": true
+        },
+        "notario": {
+          "numero_esperado": 18,
+          "numero_obtenido": 18,
+          "nombre_personal": "no_evaluable: no figura en la referencia",
+          "completo": false
+        },
+        "socios": {
+          "esperados": [
+            "ana torres demo",
+            "luis ramirez prueba"
+          ],
+          "obtenidos": [
+            "ana torres demo",
+            "luis ramirez prueba"
+          ],
+          "exacto": true
+        },
+        "representantes_legales": {
+          "esperados": [
+            "mariana ortega ejemplo"
+          ],
+          "obtenidos": [
+            "mariana ortega ejemplo"
+          ],
+          "exacto": true
+        },
+        "poderes": {
+          "esperados": [
+            "administracion",
+            "pleitos_y_cobranzas"
+          ],
+          "obtenidos": [
+            "administracion",
+            "pleitos_y_cobranzas"
+          ],
+          "exacto": true
+        },
+        "capital_social_actual": {
+          "esperado": {
+            "valor": 500000,
+            "moneda": "MXN"
+          },
+          "obtenido": {
+            "valor": "500000.00",
+            "moneda": "MXN"
+          },
+          "exacto": true
+        }
+      }
+    }
+  ],
+  "normalizacion": [
+    "Unicode NFC, espacios y mayúsculas; no se corrigen letras OCR ni acentos de nombres.",
+    "Capital por valor decimal y moneda; listas como conjuntos.",
+    "Poderes mediante catálogo explícito de tres categorías.",
+    "Notario: solo número evaluable; el dataset no aporta nombre personal."
+  ],
+  "limites": [
+    "Tres casos sintéticos, usados durante desarrollo: no prueba ciega ni estimación productiva.",
+    "A y C corresponden a la misma sociedad ficticia; no son empresas independientes.",
+    "Se conserva sin cambios el ground truth sintético de origen; no se atribuye revisión humana.",
+    "La exactitud de citas, vigencia externa, alcance de poderes y privacidad requieren controles adicionales."
+  ]
+}

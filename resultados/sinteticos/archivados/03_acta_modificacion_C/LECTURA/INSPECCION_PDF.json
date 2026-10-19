@@ -1,0 +1,29 @@
+{
+  "archivo": "03_acta_modificacion_C.pdf",
+  "sha256_pdf": "1ddceee69946a4a3c77ea2d5d5c4ed30824b4de14ea9a7737f33313391d38eb3",
+  "estado": "inspeccionado",
+  "clasificacion": "texto_pdf_o_paginas_vacias",
+  "paginas_totales": 2,
+  "paginas_con_ocr_necesario": 0,
+  "pdf_reparado_por_pymupdf": false,
+  "paginas": [
+    {
+      "pagina": 1,
+      "metodo": "texto_pdf",
+      "requiere_ocr": false,
+      "caracteres_texto_pdf": 690,
+      "caracteres_alfanumericos": 558,
+      "imagen_grande": false,
+      "criterio": "heuristica_de_texto_utilizable; no mide exactitud ni completitud"
+    },
+    {
+      "pagina": 2,
+      "metodo": "texto_pdf",
+      "requiere_ocr": false,
+      "caracteres_texto_pdf": 600,
+      "caracteres_alfanumericos": 497,
+      "imagen_grande": false,
+      "criterio": "heuristica_de_texto_utilizable; no mide exactitud ni completitud"
+    }
+  ]
+}

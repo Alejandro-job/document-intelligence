@@ -1,0 +1,1273 @@
+{
+  "archivo": "02_acta_escaneada_B.pdf",
+  "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+  "paginas": [
+    {
+      "pagina": 1,
+      "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+      "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+      "firma_lectura": "50cb35acfbe1cb86b004af3420d3c9898a3c16f7e0edda03b93f83b9cb21978b",
+      "metodo_lectura": "tesseract_spa",
+      "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONSTITUCIÓN: 06/09/2021.\nSOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.\nREPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.\nNOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su\ncontenido.\nCONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+      "lineas": [
+        {
+          "texto": "ACTA CONSTITUTIVA ESCANEADA - CASO B",
+          "rango_caracteres": [
+            0,
+            36
+          ],
+          "bbox_pixeles": [
+            524,
+            384,
+            2021,
+            430
+          ]
+        },
+        {
+          "texto": "Escritura 2205 - Notaría simulada 7",
+          "rango_caracteres": [
+            37,
+            72
+          ],
+          "bbox_pixeles": [
+            242,
+            535,
+            1064,
+            567
+          ]
+        },
+        {
+          "texto": "En la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la sociedad, según",
+          "rango_caracteres": [
+            73,
+            174
+          ],
+          "bbox_pixeles": [
+            242,
+            637,
+            2295,
+            677
+          ]
+        },
+        {
+          "texto": "ESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.",
+          "rango_caracteres": [
+            175,
+            232
+          ],
+          "bbox_pixeles": [
+            242,
+            699,
+            1572,
+            742
+          ]
+        },
+        {
+          "texto": "RAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+          "rango_caracteres": [
+            233,
+            291
+          ],
+          "bbox_pixeles": [
+            242,
+            806,
+            1516,
+            849
+          ]
+        },
+        {
+          "texto": "FECHA DE CONSTITUCIÓN: 06/09/2021.",
+          "rango_caracteres": [
+            292,
+            326
+          ],
+          "bbox_pixeles": [
+            242,
+            914,
+            1016,
+            954
+          ]
+        },
+        {
+          "texto": "SOCIOS: CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO.",
+          "rango_caracteres": [
+            327,
+            378
+          ],
+          "bbox_pixeles": [
+            239,
+            1029,
+            1397,
+            1067
+          ]
+        },
+        {
+          "texto": "CAPITAL SOCIAL: $200,000.00 MXN.",
+          "rango_caracteres": [
+            379,
+            411
+          ],
+          "bbox_pixeles": [
+            239,
+            1140,
+            949,
+            1175
+          ]
+        },
+        {
+          "texto": "REPRESENTANTE LEGAL: CARLOS MEDINA FICTICIO.",
+          "rango_caracteres": [
+            412,
+            456
+          ],
+          "bbox_pixeles": [
+            242,
+            1247,
+            1263,
+            1277
+          ]
+        },
+        {
+          "texto": "NOTA DE PRUEBA: el extracto disponible no incluye la cláusula de poderes. No debe inferirse su",
+          "rango_caracteres": [
+            457,
+            551
+          ],
+          "bbox_pixeles": [
+            242,
+            1352,
+            2139,
+            1392
+          ]
+        },
+        {
+          "texto": "contenido.",
+          "rango_caracteres": [
+            552,
+            562
+          ],
+          "bbox_pixeles": [
+            239,
+            1422,
+            443,
+            1451
+          ]
+        },
+        {
+          "texto": "CONJUNTO DE DATOS SINTÉTICO + EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA 1",
+          "rango_caracteres": [
+            563,
+            635
+          ],
+          "bbox_pixeles": [
+            177,
+            3118,
+            2357,
+            3167
+          ]
+        }
+      ],
+      "palabras": [
+        {
+          "a": 0,
+          "b": 4,
+          "t": "ACTA",
+          "box": [
+            524,
+            384,
+            709,
+            430
+          ]
+        },
+        {
+          "a": 5,
+          "b": 17,
+          "t": "CONSTITUTIVA",
+          "box": [
+            734,
+            384,
+            1247,
+            430
+          ]
+        },
+        {
+          "a": 18,
+          "b": 27,
+          "t": "ESCANEADA",
+          "box": [
+            1276,
+            384,
+            1696,
+            430
+          ]
+        },
+        {
+          "a": 28,
+          "b": 29,
+          "t": "-",
+          "box": [
+            1725,
+            403,
+            1736,
+            414
+          ]
+        },
+        {
+          "a": 30,
+          "b": 34,
+          "t": "CASO",
+          "box": [
+            1766,
+            384,
+            1954,
+            430
+          ]
+        },
+        {
+          "a": 35,
+          "b": 36,
+          "t": "B",
+          "box": [
+            1983,
+            384,
+            2021,
+            430
+          ]
+        },
+        {
+          "a": 37,
+          "b": 46,
+          "t": "Escritura",
+          "box": [
+            242,
+            535,
+            446,
+            567
+          ]
+        },
+        {
+          "a": 47,
+          "b": 51,
+          "t": "2205",
+          "box": [
+            468,
+            538,
+            575,
+            567
+          ]
+        },
+        {
+          "a": 52,
+          "b": 53,
+          "t": "-",
+          "box": [
+            597,
+            548,
+            605,
+            556
+          ]
+        },
+        {
+          "a": 54,
+          "b": 61,
+          "t": "Notaría",
+          "box": [
+            629,
+            535,
+            795,
+            567
+          ]
+        },
+        {
+          "a": 62,
+          "b": 70,
+          "t": "simulada",
+          "box": [
+            814,
+            535,
+            1021,
+            567
+          ]
+        },
+        {
+          "a": 71,
+          "b": 72,
+          "t": "7",
+          "box": [
+            1043,
+            538,
+            1064,
+            567
+          ]
+        },
+        {
+          "a": 73,
+          "b": 75,
+          "t": "En",
+          "box": [
+            242,
+            640,
+            285,
+            669
+          ]
+        },
+        {
+          "a": 76,
+          "b": 78,
+          "t": "la",
+          "box": [
+            304,
+            640,
+            333,
+            669
+          ]
+        },
+        {
+          "a": 79,
+          "b": 85,
+          "t": "CIUDAD",
+          "box": [
+            349,
+            640,
+            503,
+            669
+          ]
+        },
+        {
+          "a": 86,
+          "b": 94,
+          "t": "EJEMPLO,",
+          "box": [
+            521,
+            640,
+            699,
+            677
+          ]
+        },
+        {
+          "a": 95,
+          "b": 96,
+          "t": "a",
+          "box": [
+            717,
+            648,
+            736,
+            669
+          ]
+        },
+        {
+          "a": 97,
+          "b": 98,
+          "t": "6",
+          "box": [
+            755,
+            640,
+            774,
+            669
+          ]
+        },
+        {
+          "a": 99,
+          "b": 101,
+          "t": "de",
+          "box": [
+            790,
+            640,
+            836,
+            669
+          ]
+        },
+        {
+          "a": 102,
+          "b": 112,
+          "t": "septiembre",
+          "box": [
+            855,
+            640,
+            1075,
+            677
+          ]
+        },
+        {
+          "a": 113,
+          "b": 115,
+          "t": "de",
+          "box": [
+            1091,
+            640,
+            1137,
+            669
+          ]
+        },
+        {
+          "a": 116,
+          "b": 121,
+          "t": "2021,",
+          "box": [
+            1153,
+            640,
+            1260,
+            675
+          ]
+        },
+        {
+          "a": 122,
+          "b": 124,
+          "t": "se",
+          "box": [
+            1279,
+            648,
+            1319,
+            669
+          ]
+        },
+        {
+          "a": 125,
+          "b": 136,
+          "t": "protocoliza",
+          "box": [
+            1338,
+            640,
+            1551,
+            677
+          ]
+        },
+        {
+          "a": 137,
+          "b": 139,
+          "t": "la",
+          "box": [
+            1569,
+            640,
+            1599,
+            669
+          ]
+        },
+        {
+          "a": 140,
+          "b": 152,
+          "t": "constitución",
+          "box": [
+            1615,
+            637,
+            1851,
+            669
+          ]
+        },
+        {
+          "a": 153,
+          "b": 155,
+          "t": "de",
+          "box": [
+            1868,
+            640,
+            1913,
+            669
+          ]
+        },
+        {
+          "a": 156,
+          "b": 158,
+          "t": "la",
+          "box": [
+            1932,
+            640,
+            1962,
+            669
+          ]
+        },
+        {
+          "a": 159,
+          "b": 168,
+          "t": "sociedad,",
+          "box": [
+            1978,
+            640,
+            2163,
+            675
+          ]
+        },
+        {
+          "a": 169,
+          "b": 174,
+          "t": "según",
+          "box": [
+            2182,
+            637,
+            2295,
+            677
+          ]
+        },
+        {
+          "a": 175,
+          "b": 184,
+          "t": "ESCRITURA",
+          "box": [
+            242,
+            707,
+            462,
+            736
+          ]
+        },
+        {
+          "a": 185,
+          "b": 191,
+          "t": "NÚMERO",
+          "box": [
+            478,
+            699,
+            650,
+            736
+          ]
+        },
+        {
+          "a": 192,
+          "b": 197,
+          "t": "2205,",
+          "box": [
+            666,
+            707,
+            774,
+            742
+          ]
+        },
+        {
+          "a": 198,
+          "b": 202,
+          "t": "ante",
+          "box": [
+            793,
+            710,
+            876,
+            736
+          ]
+        },
+        {
+          "a": 203,
+          "b": 205,
+          "t": "la",
+          "box": [
+            895,
+            707,
+            924,
+            736
+          ]
+        },
+        {
+          "a": 206,
+          "b": 213,
+          "t": "NOTARÍA",
+          "box": [
+            943,
+            699,
+            1118,
+            736
+          ]
+        },
+        {
+          "a": 214,
+          "b": 222,
+          "t": "SIMULADA",
+          "box": [
+            1131,
+            707,
+            1336,
+            736
+          ]
+        },
+        {
+          "a": 223,
+          "b": 229,
+          "t": "NÚMERO",
+          "box": [
+            1352,
+            699,
+            1524,
+            736
+          ]
+        },
+        {
+          "a": 230,
+          "b": 232,
+          "t": "7.",
+          "box": [
+            1540,
+            707,
+            1572,
+            736
+          ]
+        },
+        {
+          "a": 233,
+          "b": 238,
+          "t": "RAZÓN",
+          "box": [
+            242,
+            806,
+            376,
+            844
+          ]
+        },
+        {
+          "a": 239,
+          "b": 246,
+          "t": "SOCIAL:",
+          "box": [
+            395,
+            814,
+            546,
+            844
+          ]
+        },
+        {
+          "a": 247,
+          "b": 256,
+          "t": "SERVICIOS",
+          "box": [
+            564,
+            814,
+            774,
+            844
+          ]
+        },
+        {
+          "a": 257,
+          "b": 268,
+          "t": "COMERCIALES",
+          "box": [
+            790,
+            814,
+            1070,
+            844
+          ]
+        },
+        {
+          "a": 269,
+          "b": 272,
+          "t": "DEL",
+          "box": [
+            1088,
+            814,
+            1161,
+            844
+          ]
+        },
+        {
+          "a": 273,
+          "b": 277,
+          "t": "SUR,",
+          "box": [
+            1177,
+            814,
+            1266,
+            849
+          ]
+        },
+        {
+          "a": 278,
+          "b": 282,
+          "t": "S.A.",
+          "box": [
+            1284,
+            814,
+            1354,
+            844
+          ]
+        },
+        {
+          "a": 283,
+          "b": 285,
+          "t": "DE",
+          "box": [
+            1376,
+            814,
+            1424,
+            844
+          ]
+        },
+        {
+          "a": 286,
+          "b": 291,
+          "t": "C.YV.",
+          "box": [
+            1440,
+            814,
+            1516,
+            844
+          ]
+        },
+        {
+          "a": 292,
+          "b": 297,
+          "t": "FECHA",
+          "box": [
+            242,
+            922,
+            368,
+            951
+          ]
+        },
+        {
+          "a": 298,
+          "b": 300,
+          "t": "DE",
+          "box": [
+            387,
+            922,
+            435,
+            951
+          ]
+        },
+        {
+          "a": 301,
+          "b": 314,
+          "t": "CONSTITUCIÓN:",
+          "box": [
+            451,
+            914,
+            763,
+            951
+          ]
+        },
+        {
+          "a": 315,
+          "b": 326,
+          "t": "06/09/2021.",
+          "box": [
+            782,
+            922,
+            1016,
+            954
+          ]
+        },
+        {
+          "a": 327,
+          "b": 334,
+          "t": "SOCIOS:",
+          "box": [
+            239,
+            1029,
+            398,
+            1059
+          ]
+        },
+        {
+          "a": 335,
+          "b": 341,
+          "t": "CARLOS",
+          "box": [
+            417,
+            1029,
+            572,
+            1059
+          ]
+        },
+        {
+          "a": 342,
+          "b": 348,
+          "t": "MEDINA",
+          "box": [
+            591,
+            1029,
+            744,
+            1059
+          ]
+        },
+        {
+          "a": 349,
+          "b": 357,
+          "t": "FICTICIO",
+          "box": [
+            763,
+            1029,
+            924,
+            1059
+          ]
+        },
+        {
+          "a": 358,
+          "b": 359,
+          "t": "y",
+          "box": [
+            941,
+            1037,
+            962,
+            1067
+          ]
+        },
+        {
+          "a": 360,
+          "b": 365,
+          "t": "SOFIA",
+          "box": [
+            978,
+            1029,
+            1094,
+            1059
+          ]
+        },
+        {
+          "a": 366,
+          "b": 370,
+          "t": "LUNA",
+          "box": [
+            1110,
+            1029,
+            1212,
+            1059
+          ]
+        },
+        {
+          "a": 371,
+          "b": 378,
+          "t": "ENSAYO.",
+          "box": [
+            1231,
+            1029,
+            1397,
+            1059
+          ]
+        },
+        {
+          "a": 379,
+          "b": 386,
+          "t": "CAPITAL",
+          "box": [
+            239,
+            1140,
+            400,
+            1169
+          ]
+        },
+        {
+          "a": 387,
+          "b": 394,
+          "t": "SOCIAL:",
+          "box": [
+            417,
+            1140,
+            567,
+            1169
+          ]
+        },
+        {
+          "a": 395,
+          "b": 406,
+          "t": "$200,000.00",
+          "box": [
+            586,
+            1140,
+            833,
+            1175
+          ]
+        },
+        {
+          "a": 407,
+          "b": 411,
+          "t": "MXN.",
+          "box": [
+            852,
+            1140,
+            949,
+            1169
+          ]
+        },
+        {
+          "a": 412,
+          "b": 425,
+          "t": "REPRESENTANTE",
+          "box": [
+            242,
+            1247,
+            572,
+            1277
+          ]
+        },
+        {
+          "a": 426,
+          "b": 432,
+          "t": "LEGAL:",
+          "box": [
+            591,
+            1247,
+            726,
+            1277
+          ]
+        },
+        {
+          "a": 433,
+          "b": 439,
+          "t": "CARLOS",
+          "box": [
+            744,
+            1247,
+            900,
+            1277
+          ]
+        },
+        {
+          "a": 440,
+          "b": 446,
+          "t": "MEDINA",
+          "box": [
+            919,
+            1247,
+            1072,
+            1277
+          ]
+        },
+        {
+          "a": 447,
+          "b": 456,
+          "t": "FICTICIO.",
+          "box": [
+            1088,
+            1247,
+            1263,
+            1277
+          ]
+        },
+        {
+          "a": 457,
+          "b": 461,
+          "t": "NOTA",
+          "box": [
+            242,
+            1355,
+            349,
+            1384
+          ]
+        },
+        {
+          "a": 462,
+          "b": 464,
+          "t": "DE",
+          "box": [
+            365,
+            1355,
+            414,
+            1384
+          ]
+        },
+        {
+          "a": 465,
+          "b": 472,
+          "t": "PRUEBA:",
+          "box": [
+            433,
+            1355,
+            599,
+            1384
+          ]
+        },
+        {
+          "a": 473,
+          "b": 475,
+          "t": "el",
+          "box": [
+            618,
+            1355,
+            648,
+            1384
+          ]
+        },
+        {
+          "a": 476,
+          "b": 484,
+          "t": "extracto",
+          "box": [
+            666,
+            1357,
+            828,
+            1384
+          ]
+        },
+        {
+          "a": 485,
+          "b": 495,
+          "t": "disponible",
+          "box": [
+            844,
+            1355,
+            1043,
+            1392
+          ]
+        },
+        {
+          "a": 496,
+          "b": 498,
+          "t": "no",
+          "box": [
+            1059,
+            1363,
+            1104,
+            1384
+          ]
+        },
+        {
+          "a": 499,
+          "b": 506,
+          "t": "incluye",
+          "box": [
+            1123,
+            1355,
+            1258,
+            1392
+          ]
+        },
+        {
+          "a": 507,
+          "b": 509,
+          "t": "la",
+          "box": [
+            1276,
+            1355,
+            1306,
+            1384
+          ]
+        },
+        {
+          "a": 510,
+          "b": 518,
+          "t": "cláusula",
+          "box": [
+            1322,
+            1352,
+            1481,
+            1384
+          ]
+        },
+        {
+          "a": 519,
+          "b": 521,
+          "t": "de",
+          "box": [
+            1497,
+            1355,
+            1542,
+            1384
+          ]
+        },
+        {
+          "a": 522,
+          "b": 530,
+          "t": "poderes.",
+          "box": [
+            1561,
+            1355,
+            1728,
+            1392
+          ]
+        },
+        {
+          "a": 531,
+          "b": 533,
+          "t": "No",
+          "box": [
+            1747,
+            1355,
+            1795,
+            1384
+          ]
+        },
+        {
+          "a": 534,
+          "b": 538,
+          "t": "debe",
+          "box": [
+            1811,
+            1355,
+            1908,
+            1384
+          ]
+        },
+        {
+          "a": 539,
+          "b": 548,
+          "t": "inferirse",
+          "box": [
+            1924,
+            1355,
+            2083,
+            1384
+          ]
+        },
+        {
+          "a": 549,
+          "b": 551,
+          "t": "su",
+          "box": [
+            2099,
+            1363,
+            2139,
+            1384
+          ]
+        },
+        {
+          "a": 552,
+          "b": 562,
+          "t": "contenido.",
+          "box": [
+            239,
+            1422,
+            443,
+            1451
+          ]
+        },
+        {
+          "a": 563,
+          "b": 571,
+          "t": "CONJUNTO",
+          "box": [
+            177,
+            3131,
+            331,
+            3153
+          ]
+        },
+        {
+          "a": 572,
+          "b": 574,
+          "t": "DE",
+          "box": [
+            347,
+            3131,
+            379,
+            3153
+          ]
+        },
+        {
+          "a": 575,
+          "b": 580,
+          "t": "DATOS",
+          "box": [
+            395,
+            3131,
+            492,
+            3153
+          ]
+        },
+        {
+          "a": 581,
+          "b": 590,
+          "t": "SINTÉTICO",
+          "box": [
+            505,
+            3131,
+            656,
+            3153
+          ]
+        },
+        {
+          "a": 591,
+          "b": 592,
+          "t": "+",
+          "box": [
+            667,
+            3118,
+            680,
+            3167
+          ]
+        },
+        {
+          "a": 593,
+          "b": 607,
+          "t": "EXCLUSIVAMENTE",
+          "box": [
+            691,
+            3131,
+            949,
+            3153
+          ]
+        },
+        {
+          "a": 608,
+          "b": 612,
+          "t": "PARA",
+          "box": [
+            965,
+            3131,
+            1037,
+            3153
+          ]
+        },
+        {
+          "a": 613,
+          "b": 625,
+          "t": "DEMOSTRACIÓN",
+          "box": [
+            1051,
+            3131,
+            1282,
+            3153
+          ]
+        },
+        {
+          "a": 626,
+          "b": 633,
+          "t": "TÉCNICA",
+          "box": [
+            1295,
+            3131,
+            1422,
+            3153
+          ]
+        },
+        {
+          "a": 634,
+          "b": 635,
+          "t": "1",
+          "box": [
+            2349,
+            3131,
+            2357,
+            3153
+          ]
+        }
+      ],
+      "dpi": 300,
+      "ancho": 2550,
+      "alto": 3300,
+      "avisos_ocr": "",
+      "estado": "completo",
+      "caracteres": 635,
+      "segundos": 0.631
+    }
+  ],
+  "paginas_totales": 1,
+  "protocolo_lectura": {
+    "version": "citi_lectura_hibrida_v1",
+    "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+    "pymupdf": "1.26.6",
+    "dpi": 300,
+    "psm": 6,
+    "ocr": {
+      "tessdata": "tmp/ocr_correccion/tessdata",
+      "sha256_spa": "6f2e04d02774a18f01bed44b1111f2cd7f3ba7ac9dc4373cd3f898a40ea6b464",
+      "version": "tesseract 5.3.4"
+    },
+    "codigo": "9e2a8059ff590c6690b583a5d428d84defe48615db4380531e4362aa9ec35972"
+  },
+  "inspeccion_pdf": {
+    "archivo": "02_acta_escaneada_B.pdf",
+    "sha256_pdf": "0bc74169be9c6aabbea4403d064795717a9f83b029ec10304275dd0152906dfc",
+    "estado": "inspeccionado",
+    "clasificacion": "escaneado_o_texto_no_utilizable",
+    "paginas_totales": 1,
+    "paginas_con_ocr_necesario": 1,
+    "pdf_reparado_por_pymupdf": false,
+    "paginas": [
+      {
+        "pagina": 1,
+        "metodo": "tesseract_spa",
+        "requiere_ocr": true,
+        "caracteres_texto_pdf": 0,
+        "caracteres_alfanumericos": 0,
+        "imagen_grande": true,
+        "criterio": "heuristica_de_texto_utilizable; no mide exactitud ni completitud"
+      }
+    ]
+  },
+  "paginas_no_leidas": [],
+  "paginas_sin_texto": []
+}

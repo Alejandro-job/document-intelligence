@@ -1,0 +1,6 @@
+runtime_data
+__pycache__
+*.pyc
+*.zip
+.env
+resultados/tida

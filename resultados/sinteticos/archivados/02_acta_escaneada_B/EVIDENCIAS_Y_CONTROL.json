@@ -1,0 +1,324 @@
+{
+  "control": {
+    "version": "etiquetas_explicitas_y_tablas_v1",
+    "estados": {
+      "razon_social": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "fecha_constitucion": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "numero_escritura": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "notario": {
+        "estado": "parcial",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "socios": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "representantes_legales": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "poderes": {
+        "estado": "no_encontrado",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": false
+      },
+      "capital_social_actual": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      }
+    },
+    "eventos": [],
+    "alcance_capital": "último estado explícito del instrumento; vigencia externa no verificada",
+    "orden_eventos": "solo una designación y un aumento explícitos; múltiples eventos requieren revisión",
+    "entrenamiento": false,
+    "inferencia_nueva": false,
+    "aprobado": false
+  },
+  "evidencias": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          247,
+          291
+        ],
+        "texto": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "etiqueta_razon_social",
+        "aprobado": false
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          315,
+          326
+        ],
+        "texto": "06/09/2021.",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+        "aprobado": false
+      }
+    ],
+    "numero_escritura": [
+      {
+        "referencia": "E0001",
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          0,
+          161
+        ],
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "cita_literal": "ACTA CONSTITUTIVA ESCANEADA - CASO B\nEscritura 2205 - Notaría simulada 7\nEn la CIUDAD EJEMPLO, a 6 de septiembre de 2021, se protocoliza la constitución de la so",
+        "valor_propuesto": "2205",
+        "metodo": "cabecera_instrumento"
+      },
+      {
+        "referencia": "E0002",
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          115,
+          306
+        ],
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "cita_literal": " 2021, se protocoliza la constitución de la sociedad, según\nESCRITURA NÚMERO 2205, ante la NOTARÍA SIMULADA NÚMERO 7.\nRAZÓN SOCIAL: SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.\nFECHA DE CONST",
+        "valor_propuesto": "2205",
+        "metodo": "cabecera_instrumento"
+      }
+    ],
+    "notario": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          36,
+          72
+        ],
+        "texto": "\nEscritura 2205 - Notaría simulada 7",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+        "aprobado": false
+      },
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          195,
+          231
+        ],
+        "texto": "5, ante la NOTARÍA SIMULADA NÚMERO 7",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+        "aprobado": false
+      }
+    ],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          335,
+          377
+        ],
+        "texto": "CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "lista_tras_etiqueta_socios",
+        "aprobado": false
+      }
+    ],
+    "representantes_legales": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          433,
+          455
+        ],
+        "texto": "CARLOS MEDINA FICTICIO",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "etiqueta_representante_legal",
+        "aprobado": false
+      }
+    ],
+    "poderes": [],
+    "capital_social_actual": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+        "rango_caracteres": [
+          361,
+          411
+        ],
+        "texto": "OFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.",
+        "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+        "metodo": "capital_expreso_en_instrumento",
+        "aprobado": false
+      }
+    ]
+  },
+  "candidatos": {
+    "razon_social": [
+      {
+        "valor": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            247,
+            291
+          ],
+          "texto": "SERVICIOS COMERCIALES DEL SUR, S.A. DE C.YV.",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "etiqueta_razon_social",
+          "aprobado": false
+        }
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "valor": "2021-09-06",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            315,
+            326
+          ],
+          "texto": "06/09/2021.",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+          "aprobado": false
+        }
+      }
+    ],
+    "numero_escritura": [],
+    "notario": [
+      {
+        "valor": {
+          "nombre": null,
+          "numero": 7
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            36,
+            72
+          ],
+          "texto": "\nEscritura 2205 - Notaría simulada 7",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+          "aprobado": false
+        }
+      },
+      {
+        "valor": {
+          "nombre": null,
+          "numero": 7
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            195,
+            231
+          ],
+          "texto": "5, ante la NOTARÍA SIMULADA NÚMERO 7",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+          "aprobado": false
+        }
+      }
+    ],
+    "socios": [
+      {
+        "valor": [
+          "CARLOS MEDINA FICTICIO",
+          "SOFIA LUNA ENSAYO"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            335,
+            377
+          ],
+          "texto": "CARLOS MEDINA FICTICIO y SOFIA LUNA ENSAYO",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "lista_tras_etiqueta_socios",
+          "aprobado": false
+        }
+      }
+    ],
+    "representantes_legales": [
+      {
+        "valor": [
+          "CARLOS MEDINA FICTICIO"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            433,
+            455
+          ],
+          "texto": "CARLOS MEDINA FICTICIO",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "etiqueta_representante_legal",
+          "aprobado": false
+        }
+      }
+    ],
+    "poderes": [],
+    "capital_social_actual": [
+      {
+        "valor": {
+          "valor": "200000.00",
+          "moneda": "MXN"
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_0bc74169be9c6aabbea4403d:p001:tesseract_spa",
+          "rango_caracteres": [
+            361,
+            411
+          ],
+          "texto": "OFIA LUNA ENSAYO.\nCAPITAL SOCIAL: $200,000.00 MXN.",
+          "sha256_texto_fuente": "8a2e2b073d18fcbaaa3e690030e03ce8a56204956762f0acb602e26dc0aa4bf0",
+          "metodo": "capital_expreso_en_instrumento",
+          "aprobado": false
+        },
+        "evento": "original"
+      }
+    ]
+  }
+}

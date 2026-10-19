@@ -1,0 +1,383 @@
+{
+  "control": {
+    "version": "etiquetas_explicitas_y_tablas_v1",
+    "estados": {
+      "razon_social": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "fecha_constitucion": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "numero_escritura": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "notario": {
+        "estado": "parcial",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "socios": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "representantes_legales": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "poderes": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "capital_social_actual": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      }
+    },
+    "eventos": [
+      {
+        "tipo": "designacion",
+        "valor": [
+          "MARIANA ORTEGA EJEMPLO"
+        ],
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            241,
+            263
+          ],
+          "texto": "MARIANA ORTEGA EJEMPLO",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "designacion_explicita_de_representante",
+          "aprobado": false
+        },
+        "evento": "designacion"
+      },
+      {
+        "tipo": "revocacion",
+        "nombre": "ANA TORRES DEMO",
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            170,
+            185
+          ],
+          "texto": "ANA TORRES DEMO",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "revocacion_personal_explicita",
+          "aprobado": false
+        }
+      },
+      {
+        "tipo": "aumento_capital",
+        "valor": {
+          "valor": "500000.00",
+          "moneda": "MXN"
+        },
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            3,
+            158
+          ],
+          "texto": "MER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "aumento_explicito",
+          "aprobado": false
+        },
+        "evento": "aumento"
+      }
+    ],
+    "alcance_capital": "último estado explícito del instrumento; vigencia externa no verificada",
+    "orden_eventos": "solo una designación y un aumento explícitos; múltiples eventos requieren revisión",
+    "entrenamiento": false,
+    "inferencia_nueva": false,
+    "aprobado": false
+  },
+  "evidencias": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          282,
+          328
+        ],
+        "texto": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "etiqueta_razon_social",
+        "aprobado": false
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          358,
+          417
+        ],
+        "texto": "14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+        "aprobado": false
+      }
+    ],
+    "numero_escritura": [
+      {
+        "referencia": "E0001",
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          22,
+          206
+        ],
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "cita_literal": "PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 ",
+        "valor_propuesto": "3108",
+        "metodo": "cabecera_instrumento"
+      }
+    ],
+    "notario": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          213,
+          250
+        ],
+        "texto": "o de 2024\nante el NOTARIO FICTICIO 18",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+        "aprobado": false
+      }
+    ],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          387,
+          424
+        ],
+        "texto": "ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "lista_tras_etiqueta_socios",
+        "aprobado": false
+      }
+    ],
+    "representantes_legales": [
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          241,
+          263
+        ],
+        "texto": "MARIANA ORTEGA EJEMPLO",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "designacion_explicita_de_representante",
+        "aprobado": false
+      },
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          170,
+          185
+        ],
+        "texto": "ANA TORRES DEMO",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "revocacion_personal_explicita",
+        "aprobado": false
+      }
+    ],
+    "poderes": [
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          355,
+          400
+        ],
+        "texto": "PLEITOS Y COBRANZAS\nY ACTOS DE ADMINISTRACIÓN",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "poderes_a_nueva_representante",
+        "aprobado": false
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          3,
+          158
+        ],
+        "texto": "MER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "aumento_explicito",
+        "aprobado": false
+      }
+    ]
+  },
+  "candidatos": {
+    "razon_social": [
+      {
+        "valor": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+          "rango_caracteres": [
+            282,
+            328
+          ],
+          "texto": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+          "metodo": "etiqueta_razon_social",
+          "aprobado": false
+        }
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "valor": "2022-03-14",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+          "rango_caracteres": [
+            358,
+            417
+          ],
+          "texto": "14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ",
+          "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+          "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+          "aprobado": false
+        }
+      }
+    ],
+    "numero_escritura": [],
+    "notario": [
+      {
+        "valor": {
+          "nombre": null,
+          "numero": 18
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+          "rango_caracteres": [
+            213,
+            250
+          ],
+          "texto": "o de 2024\nante el NOTARIO FICTICIO 18",
+          "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+          "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+          "aprobado": false
+        }
+      }
+    ],
+    "socios": [
+      {
+        "valor": [
+          "ANA TORRES DEMO",
+          "LUIS RAMIREZ PRUEBA"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+          "rango_caracteres": [
+            387,
+            424
+          ],
+          "texto": "ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA",
+          "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+          "metodo": "lista_tras_etiqueta_socios",
+          "aprobado": false
+        }
+      }
+    ],
+    "representantes_legales": [
+      {
+        "valor": [
+          "MARIANA ORTEGA EJEMPLO"
+        ],
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            241,
+            263
+          ],
+          "texto": "MARIANA ORTEGA EJEMPLO",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "designacion_explicita_de_representante",
+          "aprobado": false
+        },
+        "evento": "designacion"
+      }
+    ],
+    "poderes": [
+      {
+        "valor": [
+          "pleitos_y_cobranzas",
+          "administracion"
+        ],
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            355,
+            400
+          ],
+          "texto": "PLEITOS Y COBRANZAS\nY ACTOS DE ADMINISTRACIÓN",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "poderes_a_nueva_representante",
+          "aprobado": false
+        },
+        "requiere_designacion_unica": true
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "valor": {
+          "valor": "500000.00",
+          "moneda": "MXN"
+        },
+        "evidencia": {
+          "pagina": 2,
+          "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+          "rango_caracteres": [
+            3,
+            158
+          ],
+          "texto": "MER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS",
+          "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+          "metodo": "aumento_explicito",
+          "aprobado": false
+        },
+        "evento": "aumento"
+      }
+    ]
+  }
+}

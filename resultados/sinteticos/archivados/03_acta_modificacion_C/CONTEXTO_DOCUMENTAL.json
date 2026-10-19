@@ -1,0 +1,337 @@
+{
+  "version": "contexto_encabezados_y_roles_v1",
+  "sha256_pdf": "1ddceee69946a4a3c77ea2d5d5c4ed30824b4de14ea9a7737f33313391d38eb3",
+  "paginas": [
+    {
+      "pagina": 1,
+      "tipos_propuestos": [
+        "texto_documental_sin_clasificar"
+      ],
+      "detonadores": {
+        "razon_social": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              268,
+              280
+            ],
+            "texto": "RAZÓN SOCIAL",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "fecha_constitucion": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              344,
+              356
+            ],
+            "texto": "CONSTITUCIÓN",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "numero_escritura": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              82,
+              93
+            ],
+            "texto": "Escritura 3",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              167,
+              183
+            ],
+            "texto": "ESCRITURA NÚMERO",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "notario": [],
+        "socios": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              379,
+              385
+            ],
+            "texto": "SOCIOS",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "representantes_legales": [],
+        "poderes": [],
+        "capital_social_actual": [
+          {
+            "pagina": 1,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+            "rango_caracteres": [
+              439,
+              453
+            ],
+            "texto": "CAPITAL SOCIAL",
+            "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ]
+      },
+      "metadatos_contextuales": {
+        "rfc": [],
+        "fecha_inscripcion": [],
+        "inicio_operaciones": [],
+        "folio_mercantil": [],
+        "prelacion_registral": [],
+        "registro": []
+      },
+      "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+      "texto_completo": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+      "advertencia": "La clasificación describe el contenido de esta página; no sustituye el rol del instrumento completo."
+    },
+    {
+      "pagina": 2,
+      "tipos_propuestos": [
+        "texto_documental_sin_clasificar"
+      ],
+      "detonadores": {
+        "razon_social": [],
+        "fecha_constitucion": [],
+        "numero_escritura": [],
+        "notario": [],
+        "socios": [],
+        "representantes_legales": [],
+        "poderes": [
+          {
+            "pagina": 2,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+            "rango_caracteres": [
+              460,
+              470
+            ],
+            "texto": "facultades",
+            "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 2,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+            "rango_caracteres": [
+              355,
+              374
+            ],
+            "texto": "PLEITOS Y COBRANZAS",
+            "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ],
+        "capital_social_actual": [
+          {
+            "pagina": 2,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+            "rango_caracteres": [
+              30,
+              44
+            ],
+            "texto": "CAPITAL SOCIAL",
+            "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          },
+          {
+            "pagina": 2,
+            "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+            "rango_caracteres": [
+              83,
+              97
+            ],
+            "texto": "CAPITAL\nSOCIAL",
+            "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+            "metodo": "detonador_literal_con_variante_de_OCR",
+            "aprobado": false
+          }
+        ]
+      },
+      "metadatos_contextuales": {
+        "rfc": [],
+        "fecha_inscripcion": [],
+        "inicio_operaciones": [],
+        "folio_mercantil": [],
+        "prelacion_registral": [],
+        "registro": []
+      },
+      "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+      "texto_completo": "PRIMER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS PODERES DE ANA TORRES DEMO COMO REPRESENTANTE\nLEGAL.\nTERCER ACUERDO: SE DESIGNA A MARIANA ORTEGA EJEMPLO COMO REPRESENTANTE LEGAL.\nCUARTO ACUERDO: A LA NUEVA REPRESENTANTE SE OTORGAN PODERES PARA PLEITOS Y COBRANZAS\nY ACTOS DE ADMINISTRACIÓN.\nEsta acta de modificación ficticia requiere verificar las facultades otorgadas y su vigencia conforme al\nexpediente completo.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n2",
+      "advertencia": "La clasificación describe el contenido de esta página; no sustituye el rol del instrumento completo."
+    }
+  ],
+  "personas_en_tablas": [],
+  "remisiones": [],
+  "recuperacion_por_campo": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          690
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "razon_social",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          690
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "fecha_constitucion",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "numero_escritura": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          690
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "numero_escritura",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "notario": [],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          690
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "socios",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "representantes_legales": [],
+    "poderes": [
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          0,
+          600
+        ],
+        "texto": "PRIMER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS PODERES DE ANA TORRES DEMO COMO REPRESENTANTE\nLEGAL.\nTERCER ACUERDO: SE DESIGNA A MARIANA ORTEGA EJEMPLO COMO REPRESENTANTE LEGAL.\nCUARTO ACUERDO: A LA NUEVA REPRESENTANTE SE OTORGAN PODERES PARA PLEITOS Y COBRANZAS\nY ACTOS DE ADMINISTRACIÓN.\nEsta acta de modificación ficticia requiere verificar las facultades otorgadas y su vigencia conforme al\nexpediente completo.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n2",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "poderes",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "pagina": 2,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p002:texto_pdf",
+        "rango_caracteres": [
+          0,
+          600
+        ],
+        "texto": "PRIMER ACUERDO: SE AUMENTA EL CAPITAL SOCIAL A $500,000.00 MXN, EN SUSTITUCIÓN DEL CAPITAL\nSOCIAL ORIGINAL DE $100,000.00 MXN.\nSEGUNDO ACUERDO: SE REVOCAN LOS PODERES DE ANA TORRES DEMO COMO REPRESENTANTE\nLEGAL.\nTERCER ACUERDO: SE DESIGNA A MARIANA ORTEGA EJEMPLO COMO REPRESENTANTE LEGAL.\nCUARTO ACUERDO: A LA NUEVA REPRESENTANTE SE OTORGAN PODERES PARA PLEITOS Y COBRANZAS\nY ACTOS DE ADMINISTRACIÓN.\nEsta acta de modificación ficticia requiere verificar las facultades otorgadas y su vigencia conforme al\nexpediente completo.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n2",
+        "sha256_texto_fuente": "67c2ae024889ca33a42e70321b88a33bdaa4008a0faf89ca46ac5e425e9283fa",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "capital_social_actual",
+        "tipo": "pagina",
+        "prioridad": 2,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      },
+      {
+        "pagina": 1,
+        "fuente_id": "doc_1ddceee69946a4a3c77ea2d5:p001:texto_pdf",
+        "rango_caracteres": [
+          0,
+          690
+        ],
+        "texto": "DOCUMENTO FICTICIO DE PRUEBA - SIN VALIDEZ LEGAL\nMODIFICACIÓN SOCIETARIA · CASO C\nEscritura 3108 · Antecedente de acta A · 18/07/2024\nACTA DE ASAMBLEA EXTRAORDINARIA, ESCRITURA NÚMERO 3108, celebrada el 18 de julio de 2024\nante el NOTARIO FICTICIO 18, CIUDAD EJEMPLO.\nRAZÓN SOCIAL: INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.\nANTECEDENTE DE CONSTITUCIÓN: 14 DE MARZO DE 2022. SOCIOS: ANA TORRES DEMO y LUIS RAMIREZ\nPRUEBA.\nANTECEDENTE: CAPITAL SOCIAL ANTERIOR DE $100,000.00 MXN Y REPRESENTANTE LEGAL ANA\nTORRES DEMO.\nEl presente documento registra cambios aprobados por la asamblea en la fecha de la modificación.\nCONJUNTO DE DATOS SINTÉTICO · EXCLUSIVAMENTE PARA DEMOSTRACIÓN TÉCNICA\n1",
+        "sha256_texto_fuente": "dccab3e7ce5d734558e6876c1bf580cdf38d98375195ab37ead63f18cd8ff06f",
+        "metodo": "contexto_completo_de_pagina",
+        "aprobado": false,
+        "campo": "capital_social_actual",
+        "tipo": "pagina",
+        "prioridad": 1,
+        "tipos": [
+          "texto_documental_sin_clasificar"
+        ]
+      }
+    ]
+  },
+  "alertas_calidad": [],
+  "entrenamiento": false,
+  "inferencia_nueva": false,
+  "ocr_nuevo": false,
+  "evaluacion": "diagnostico de desarrollo; no precision ni recall de extraccion",
+  "aprobado": false
+}

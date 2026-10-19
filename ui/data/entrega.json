@@ -1,0 +1,61 @@
+{
+  "schema_version": "documental_entrega_v1",
+  "alcance": "Prototipo de extracción y revisión para entregar. El motor local conserva evidencia y estados; no acredita producción ni resuelve todos los tipos documentales.",
+  "evaluacion": {
+    "documentos": 3,
+    "particion": "Desarrollo sintético conocido",
+    "resumen": [
+      {
+        "campo": "Razon social",
+        "medida": "Coincidencia exacta",
+        "resultado": "2/3"
+      },
+      {
+        "campo": "Fecha constitucion",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Numero escritura",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Notario",
+        "medida": "Número; nombre no evaluable",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Socios",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Representantes legales",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Poderes",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      },
+      {
+        "campo": "Capital social actual",
+        "medida": "Coincidencia exacta",
+        "resultado": "3/3"
+      }
+    ],
+    "limite": "Tres PDFs conocidos; A y C son de una misma sociedad ficticia. No mide precisión real independiente ni alcance jurídico de poderes."
+  },
+  "fichas_complementarias": {
+    "tipos": [
+      "ine",
+      "comprobante",
+      "otro"
+    ],
+    "modo": "captura_manual",
+    "extraccion_automatica": false,
+    "guardado": "navegador_por_documento_base"
+  }
+}

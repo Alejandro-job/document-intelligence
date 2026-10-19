@@ -1,0 +1,343 @@
+{
+  "control": {
+    "version": "etiquetas_explicitas_y_tablas_v1",
+    "estados": {
+      "razon_social": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "fecha_constitucion": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "numero_escritura": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "notario": {
+        "estado": "parcial",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "socios": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "representantes_legales": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "poderes": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      },
+      "capital_social_actual": {
+        "estado": "extraido",
+        "aprobado": false,
+        "revision_humana": "pendiente",
+        "evidencia_disponible": true
+      }
+    },
+    "eventos": [],
+    "alcance_capital": "último estado explícito del instrumento; vigencia externa no verificada",
+    "orden_eventos": "solo una designación y un aumento explícitos; múltiples eventos requieren revisión",
+    "entrenamiento": false,
+    "inferencia_nueva": false,
+    "aprobado": false
+  },
+  "evidencias": {
+    "razon_social": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          318,
+          364
+        ],
+        "texto": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "etiqueta_razon_social",
+        "aprobado": false
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          388,
+          408
+        ],
+        "texto": "14 DE MARZO DE 2022.",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+        "aprobado": false
+      }
+    ],
+    "numero_escritura": [
+      {
+        "referencia": "E0001",
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          16,
+          200
+        ],
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "cita_literal": "IO DE PRUEBA - SIN VALIDEZ LEGAL\nACTA CONSTITUTIVA · CASO A\nEscritura 1201 · Fecha 14/03/2022 · Notario ficticio 18\nEn la CIUDAD EJEMPLO, a 14 de marzo de 2022, se hace constar la cons",
+        "valor_propuesto": "1201",
+        "metodo": "cabecera_instrumento"
+      }
+    ],
+    "notario": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          94,
+          131
+        ],
+        "texto": "echa 14/03/2022 · Notario ficticio 18",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+        "aprobado": false
+      },
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          265,
+          302
+        ],
+        "texto": "1, ante el NOTARIO FICTICIO NÚMERO 18",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+        "aprobado": false
+      }
+    ],
+    "socios": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          428,
+          465
+        ],
+        "texto": "ANA TORRES DEMO y LUIS RAMIREZ PRUEBA",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "lista_tras_etiqueta_socios",
+        "aprobado": false
+      }
+    ],
+    "representantes_legales": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          530,
+          545
+        ],
+        "texto": "ANA TORRES DEMO",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "etiqueta_representante_legal",
+        "aprobado": false
+      }
+    ],
+    "poderes": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          567,
+          611
+        ],
+        "texto": "PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "facultades_tras_etiqueta_explicita",
+        "aprobado": false
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "pagina": 1,
+        "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+        "rango_caracteres": [
+          458,
+          508
+        ],
+        "texto": " PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.",
+        "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+        "metodo": "capital_expreso_en_instrumento",
+        "aprobado": false
+      }
+    ]
+  },
+  "candidatos": {
+    "razon_social": [
+      {
+        "valor": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            318,
+            364
+          ],
+          "texto": "INNOVACION INDUSTRIAL DEL CENTRO, S.A. DE C.V.",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "etiqueta_razon_social",
+          "aprobado": false
+        }
+      }
+    ],
+    "fecha_constitucion": [
+      {
+        "valor": "2022-03-14",
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            388,
+            408
+          ],
+          "texto": "14 DE MARZO DE 2022.",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "fecha_tras_etiqueta_constitutiva; excluye_modificacion_y_registro",
+          "aprobado": false
+        }
+      }
+    ],
+    "numero_escritura": [],
+    "notario": [
+      {
+        "valor": {
+          "nombre": null,
+          "numero": 18
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            94,
+            131
+          ],
+          "texto": "echa 14/03/2022 · Notario ficticio 18",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+          "aprobado": false
+        }
+      },
+      {
+        "valor": {
+          "nombre": null,
+          "numero": 18
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            265,
+            302
+          ],
+          "texto": "1, ante el NOTARIO FICTICIO NÚMERO 18",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "numero_de_notaria; nombre_personal_no_documentado",
+          "aprobado": false
+        }
+      }
+    ],
+    "socios": [
+      {
+        "valor": [
+          "ANA TORRES DEMO",
+          "LUIS RAMIREZ PRUEBA"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            428,
+            465
+          ],
+          "texto": "ANA TORRES DEMO y LUIS RAMIREZ PRUEBA",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "lista_tras_etiqueta_socios",
+          "aprobado": false
+        }
+      }
+    ],
+    "representantes_legales": [
+      {
+        "valor": [
+          "ANA TORRES DEMO"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            530,
+            545
+          ],
+          "texto": "ANA TORRES DEMO",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "etiqueta_representante_legal",
+          "aprobado": false
+        }
+      }
+    ],
+    "poderes": [
+      {
+        "valor": [
+          "pleitos_y_cobranzas",
+          "administracion"
+        ],
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            567,
+            611
+          ],
+          "texto": "PLEITOS Y COBRANZAS; ACTOS DE ADMINISTRACIÓN",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "facultades_tras_etiqueta_explicita",
+          "aprobado": false
+        }
+      }
+    ],
+    "capital_social_actual": [
+      {
+        "valor": {
+          "valor": "100000.00",
+          "moneda": "MXN"
+        },
+        "evidencia": {
+          "pagina": 1,
+          "fuente_id": "doc_fad6a416ea5b8e90be16fd60:p001:texto_pdf",
+          "rango_caracteres": [
+            458,
+            508
+          ],
+          "texto": " PRUEBA.\nCAPITAL SOCIAL ORIGINAL: $100,000.00 MXN.",
+          "sha256_texto_fuente": "f49e00335823e264ddc2c651f3fff2d65f77a96840a0540b3f17bcfc8655a74b",
+          "metodo": "capital_expreso_en_instrumento",
+          "aprobado": false
+        },
+        "evento": "original"
+      }
+    ]
+  }
+}

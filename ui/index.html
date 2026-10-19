@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Piloto privado de revisión de documentos, evidencia y etiquetas de entrenamiento.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob:; frame-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Revisión documental · Mi proyecto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/jszip.min.js" defer></script>
+  <script type="module" src="app.mjs"></script>
+</head>
+<body data-area="documents" data-doc-kind="acta">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Inicio"><span>Revisión documental<span class="brand-sub">MI PROYECTO</span></span></a>
+    <nav class="main-tabs" aria-label="Área de trabajo">
+      <button data-tab="review" class="active">Expediente</button>
+      <button data-tab="processing">Procesar PDF</button>
+      <button data-tab="training">Etiquetas</button>
+      <button data-tab="model">Modelo</button>
+      <button data-tab="status">Progreso</button>
+      <button data-tab="delivery">Entrega</button>
+    </nav>
+    <span class="private-badge"><span></span>Espacio privado</span>
+    <button id="importBtn" class="button secondary">Abrir archivo</button>
+    <button id="exportJsonBtn" class="button secondary">JSON</button>
+    <button id="exportBtn" class="button primary">Exportar respaldo</button>
+    <input id="fileInput" type="file" accept=".zip,.json,.pdf" hidden>
+  </header>
+  <nav class="document-types" aria-label="Tipo de documento">
+    <button data-doc-kind="acta" class="active" aria-pressed="true"><strong>Acta constitutiva</strong><span>Ocho campos y contexto</span></button>
+    <button data-doc-kind="comprobante" aria-pressed="false"><strong>Comprobante de domicilio</strong><span>Titular, dirección y fecha</span></button>
+    <button data-doc-kind="ine" aria-pressed="false"><strong>INE</strong><span>Identidad y domicilio</span></button>
+    <button data-doc-kind="otro" aria-pressed="false"><strong>Otros documentos</strong><span>Ficha y observaciones</span></button>
+  </nav>
+  <div class="workspace-bar">
+    <button id="sidebarToggle" class="button icon mobile-only" aria-label="Mostrar miniaturas">☰</button>
+    <div class="doc-picker"><label for="docSelect">Documento</label><select id="docSelect"><option>Cargando documentos…</option></select></div>
+    <span id="docMeta" class="muted"></span>
+    <div class="save-state" id="saveStatus" role="status">Preparando revisión</div>
+    <label class="reviewer-label" for="reviewer">Revisor<input id="reviewer" placeholder="Tu nombre" autocomplete="name"></label>
+  </div>
+  <main id="reviewView" class="view active">
+    <aside id="thumbnailSidebar" class="thumbnails-panel">
+      <div class="sidebar-heading"><strong>Páginas</strong><span id="pageCount" class="muted"></span></div>
+      <div class="search-box"><input id="search" placeholder="Buscar en el documento" aria-label="Buscar en el documento"><button id="searchBtn" aria-label="Buscar">⌕</button></div>
+      <div id="searchResults" hidden></div>
+      <div id="thumbnails" class="thumbnails"></div>
+    </aside>
+    <section class="document-panel" aria-label="Visor del documento">
+      <div class="viewer-toolbar">
+        <div class="toolbar-group"><button id="prevPage" class="button icon" aria-label="Página anterior">‹</button><label>Página <input id="pageNumber" type="number" min="1" value="1" aria-label="Número de página"></label><span id="totalPages">/ —</span><button id="nextPage" class="button icon" aria-label="Página siguiente">›</button></div>
+        <div class="toolbar-group"><button id="zoomOut" class="button icon" aria-label="Alejar">−</button><span id="zoomValue">100%</span><button id="zoomIn" class="button icon" aria-label="Acercar">+</button><button id="fitWidth" class="button">Ajustar</button></div>
+        <div class="toolbar-group tools"><button id="handTool" class="button selected" aria-pressed="true">Mover</button><button id="drawTool" class="button" aria-pressed="false">Marcar región</button><label class="check"><input id="showMarks" type="checkbox" checked> Marcas</label></div>
+      </div>
+      <div class="viewer-hint" id="viewerHint">Arrastra para mover · usa el zoom para leer · elige un campo para ver su evidencia</div>
+      <div id="viewport" class="viewport hand-tool" tabindex="0" aria-label="Documento completo, desplazamiento vertical y horizontal">
+        <div id="pageStack" class="page-stack"></div>
+        <div id="loading" class="loading"><div class="spinner"></div><h2>Abriendo documentos</h2><p>Recuperando páginas y evidencias existentes.</p></div>
+      </div>
+      <div class="viewer-bottom"><span id="selectionInfo">Documento completo</span><span><span class="legend-dot proposal"></span>Propuesta <span class="legend-dot confirmed"></span>Marca humana <span class="legend-dot context"></span>Contexto</span></div>
+    </section>
+    <aside id="inspector" class="inspector">
+      <div class="inspector-heading"><div><span class="eyebrow">EXTRACCIÓN</span><h1>Los ocho campos</h1></div><span id="reviewCount" class="count-badge">0/8</span></div>
+      <div class="inspector-tabs"><button id="fieldsTab" class="active">Datos</button><button id="contextTab">Contexto</button></div>
+      <div id="fieldCards" class="field-cards"></div>
+      <div id="contextPanel" class="context-panel" hidden></div>
+      <div class="inspector-footer"><button id="exportEvidenceBtn" class="inline-button">Descargar evidencia y contexto JSON</button><button id="saveServerBtn" class="inline-button" hidden>Guardar revisión en el servidor local</button><p>Las propuestas conservan su estado hasta que revises el valor y su evidencia.</p></div>
+    </aside>
+  </main>
+  <section id="auxView" class="view dossier-view" aria-label="Documentos complementarios">
+    <div class="dossier-heading"><div><span class="eyebrow">EXPEDIENTE DOCUMENTAL</span><h1 id="auxTitle">Documento complementario</h1><p id="auxOwner" class="help-text"></p></div><div class="dossier-actions"><button id="auxRestore" class="button secondary">Restaurar respaldo</button><button id="auxExport" class="button primary">Exportar ficha JSON</button></div></div>
+    <div class="dossier-notice"><span class="notice-dot"></span><p>Captura manual disponible. La extracción automática de INE y comprobantes está pendiente de validación. Los campos vacíos se conservan sin completar.</p></div>
+    <div class="dossier-card">
+      <section class="attachment-panel" aria-label="Archivo del documento">
+        <div class="attachment-heading"><div><span class="eyebrow">DOCUMENTO ORIGINAL</span><h2 id="auxFilename">Añade tu documento</h2></div><button id="auxUpload" class="button secondary">Cargar archivo</button></div>
+        <div class="attachment-toolbar"><div id="auxSides" class="segmented" hidden><button data-side="frente" class="selected">Frente</button><button data-side="reverso">Reverso</button></div><div class="toolbar-group"><button id="auxZoomOut" class="button icon" aria-label="Alejar imagen">−</button><span id="auxZoomValue">100%</span><button id="auxZoomIn" class="button icon" aria-label="Acercar imagen">+</button><button id="auxFit" class="button">Ajustar</button></div><button id="auxMark" class="button" aria-pressed="false">Marcar campo</button></div>
+        <div id="auxViewport" class="attachment-viewport"><div id="auxPreview"></div><div id="auxEmpty" class="attachment-empty"><span class="eyebrow">PDF · JPG · PNG · WEBP</span><h3>El documento va aquí</h3><p>Carga un archivo para verlo junto a sus datos.</p><button id="auxEmptyUpload" class="button primary">Seleccionar archivo</button><p class="help-text">Se guarda en este navegador, dentro del expediente seleccionado.</p></div></div>
+        <div class="attachment-foot"><span id="auxPreviewHint">Hasta 25 MB por archivo.</span><a id="auxOpenOriginal" class="inline-button" target="_blank" rel="noopener" hidden>Abrir original ↗</a></div>
+      </section>
+      <section class="capture-panel" aria-label="Datos del documento"><div class="capture-heading"><div><span class="eyebrow">DATOS DEL DOCUMENTO</span><h2 id="auxFieldsTitle">Campos para revisar</h2></div><span class="status-pill amber">Captura manual</span></div><form id="auxForm"><label class="capture-reviewer" for="auxReviewer">Capturó (opcional)<input id="auxReviewer" maxlength="100" placeholder="Tu nombre" autocomplete="name"></label><div id="auxFields" class="capture-grid"></div><label class="form-label">Observaciones<textarea id="auxNotes" rows="2" maxlength="16000" placeholder="Contexto, datos ilegibles o diferencias entre documentos"></textarea></label><div class="capture-footer"><span id="auxSaveStatus" role="status">Sin archivo</span><button id="auxSave" type="submit" class="button primary">Guardar ficha</button></div></form><p class="help-text capture-limit">Selecciona un campo para marcar su ubicación en una imagen. Cada dato conserva archivo, página y origen manual; no queda aprobado automáticamente.</p></section>
+    </div>
+    <details class="dossier-details"><summary>Evidencia del campo seleccionado</summary><div class="grid-2"><label class="form-label">Página<input id="auxEvidencePage" type="number" min="1" max="1000" value="1"></label><label class="form-label">Campo<select id="auxEvidenceField"></select></label></div><label class="form-label">Cita literal transcrita del documento<textarea id="auxEvidenceQuote" rows="3" maxlength="16000" placeholder="Escribe lo que puedes leer. Esta transcripción no se verifica por OCR."></textarea></label><div class="dossier-evidence-actions"><button id="auxClearRegion" class="button secondary">Quitar región de este campo</button><span id="auxRegionStatus" class="help-text">Sin región marcada.</span></div></details>
+    <input id="auxFileInput" type="file" accept="application/pdf,image/jpeg,image/png,image/webp,.pdf,.jpg,.jpeg,.png,.webp" hidden>
+    <input id="auxRestoreInput" type="file" accept=".zip,.json" hidden>
+  </section>
+  <section id="processingView" class="view content-view">
+    <div class="content-header"><div><span class="eyebrow">LECTURA · CONTEXTO · EXTRACCIÓN</span><h1>Procesar un documento nuevo</h1><p>Se conserva el original. Cada resultado incluye datos, estado y referencias de origen.</p></div><span id="backendStatus" class="status-pill amber">Comprobando motor local</span></div>
+    <div class="grid-2"><div class="card"><h2>Selecciona el PDF</h2><p class="help-text">Hasta 50 MB y 100 páginas. Las páginas con texto utilizable evitan OCR.</p><input id="processFile" type="file" accept="application/pdf,.pdf"><p id="processFilename" class="help-text">Ningún archivo seleccionado.</p><label class="form-label">Motor<select id="processEngine"><option value="reglas">Reglas y contexto documental</option><option value="qwen" disabled>Qwen local · entorno preparado</option></select></label><p id="engineHelp" class="help-text">Las propuestas se envían a revisión. No se entrena ningún modelo al procesar un PDF.</p><button id="processBtn" class="button primary" disabled>Procesar documento</button><p id="processProgress" role="status" class="help-text"></p></div>
+    <div id="backendInstructions" class="card"><h2>Abrir la aplicación con procesamiento</h2><p class="help-text">Este frente privado revisa resultados guardados. La lectura de PDFs nuevos se ejecuta en el servidor Python del paquete o en tu Colab.</p><pre class="code-box" id="launchCode">from google.colab import drive
+drive.mount('/content/drive')
+%run -i /content/document-intelligence/scripts/iniciar_colab.py</pre><button id="copyLaunchCode" class="button secondary">Copiar celda de Colab</button><p class="help-text">La celda abre una vista amplia de la misma interfaz conectada al motor dentro de Colab. Las revisiones de este navegador permanecen aquí hasta exportarlas.</p></div></div>
+    <div class="card section-space"><h2>Trabajos del servidor local</h2><div id="processingJobs"><p class="help-text">Conecta el servidor para crear trabajos nuevos.</p></div><button id="refreshJobs" class="button secondary" disabled>Actualizar trabajos</button></div>
+  </section>
+  <section id="trainingView" class="view content-view">
+    <div class="content-header"><div><span class="eyebrow">APRENDIZAJE SUPERVISADO</span><h1>Etiquetas para el localizador</h1><p>Revisa la relevancia de cada fragmento. Los campos sin revisar conservan su estado.</p></div><button id="exportLabelsBtn" class="button primary">Exportar etiquetas para Colab</button></div>
+    <div id="trainingContent"></div>
+  </section>
+  <section id="modelView" class="view content-view">
+    <div class="content-header"><div><span class="eyebrow">DIAGNÓSTICO GUARDADO</span><h1>Modelo y entrenamiento</h1><p>Pesos reales de la muestra guardada y resultados de entrenamiento que importes.</p></div><button id="importTrainingBtn" class="button secondary">Importar resultado de entrenamiento</button></div>
+    <div id="modelContent"></div>
+  </section>
+  <section id="statusView" class="view content-view"><div class="content-header"><div><span class="eyebrow">PROGRESO DEL PROYECTO</span><h1>Qué funciona y qué falta</h1><p>Estado del piloto basado en los archivos disponibles.</p></div><span class="status-pill amber">Evaluación pendiente</span></div><div id="statusContent"></div></section>
+  <section id="deliveryView" class="view content-view"><div class="content-header"><div><span class="eyebrow">PROTOTIPO REPRODUCIBLE</span><h1>Paquete para la entrega</h1><p>Código, tres casos sintéticos, resultados medidos y decisiones técnicas.</p></div><span class="status-pill amber">Producción sin validar</span></div><div id="deliveryContent"><p>Cargando el resumen de entrega…</p></div></section>
+  <dialog id="fieldDialog" class="modal"><form id="fieldForm"><div class="modal-heading"><h2 id="fieldDialogTitle">Revisar campo</h2><button type="button" class="close-dialog button icon" aria-label="Cerrar">×</button></div><p id="fieldHelp" class="muted"></p><label class="form-label">Valor propuesto / corrección<textarea id="fieldValue" rows="7" spellcheck="false"></textarea></label><label class="form-label">Evidencia seleccionada<select id="fieldEvidence"></select></label><blockquote id="fieldQuote"></blockquote><label class="form-label">Nota de revisión<input id="fieldNote" placeholder="Ambigüedad, corrección o alcance de la revisión"></label><p id="fieldError" class="form-error" role="alert"></p><div class="modal-actions"><button type="button" class="close-dialog button secondary">Cancelar</button><button type="submit" class="button primary">Confirmar valor con evidencia</button></div></form></dialog>
+  <dialog id="regionDialog" class="modal"><form id="regionForm"><div class="modal-heading"><h2>Guardar región revisada</h2><button type="button" class="close-dialog button icon" aria-label="Cerrar">×</button></div><p>La región se vincula con palabras y caracteres de la lectura existente.</p><label class="form-label">Campo<select id="regionField"></select></label><label class="form-label">Texto literal seleccionado<textarea id="regionText" rows="7" readonly></textarea></label><label class="check"><input id="regionIsContext" type="checkbox"> Es contexto de apoyo</label><label class="form-label">Nota<input id="regionNote" placeholder="Opcional"></label><p class="muted">Guardar esta región confirma la cita. El valor final del campo se revisa desde Datos.</p><p id="regionError" class="form-error" role="alert"></p><div class="modal-actions"><button type="button" class="close-dialog button secondary">Cancelar</button><button type="submit" class="button primary">Guardar región</button></div></form></dialog>
+  <dialog id="downloadDialog" class="modal"><div class="modal-heading"><h2>Archivo preparado</h2><button class="close-dialog button icon" aria-label="Cerrar">×</button></div><p>Si la descarga no empieza, usa este enlace:</p><a id="downloadLink" class="button primary" download>Descargar archivo</a><p class="muted">El respaldo se exporta desde este navegador. No se ha escrito en Google Drive.</p></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>Activa JavaScript para navegar y revisar documentos.</noscript>
+</body>
+</html>
